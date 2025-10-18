@@ -357,151 +357,190 @@
     </section>
 
     <!-- Extension Section -->
-  <section
-    class="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-pink-50 border-t border-gray-100"
-  >
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <!-- Left: Video -->
-        <div class="flex justify-center relative group">
-          <div
-            class="absolute -inset-4 bg-purple-200/30 blur-3xl rounded-3xl opacity-50 group-hover:opacity-80 transition duration-500"
-          ></div>
-          <video
-            src="./ShortVideo2.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-            class="relative z-10 rounded-3xl shadow-5xl w-[290px] max-w-md md:max-w-lg ring-4 ring-yellow-300 group-hover:scale-105 transition-all duration-500"
-          ></video>
-        </div>
+    <section
+      class="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-pink-50 border-t border-gray-100"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <!-- Left: Video -->
+          <div class="flex justify-center relative group">
+            <div
+              class="absolute -inset-4 bg-purple-200/30 blur-3xl rounded-3xl opacity-50 group-hover:opacity-80 transition duration-500"
+            ></div>
+            <video
+              src="./ShortVideo2.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              class="relative z-10 rounded-3xl shadow-5xl w-[290px] max-w-md md:max-w-lg ring-4 ring-yellow-300 group-hover:scale-105 transition-all duration-500"
+            ></video>
+          </div>
 
-        <!-- Right: Text Content -->
-        <div class="text-center md:text-right">
-          <h2
-            class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-snug"
-          >
-            SMART SHOPPING <br />
-            WITH <span class="text-purple-600">Online.Com</span>
-          </h2>
+          <!-- Right: Text Content -->
+          <div class="text-center md:text-right">
+            <h2
+              class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-snug"
+            >
+              SMART SHOPPING <br />
+              WITH <span class="text-purple-600">Online.Com</span>
+            </h2>
 
-          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-            Online.Com lists thousands of products from top Bangladesh
-            eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
-            and more. No more worrying about confusing prices across platforms —
-            our intelligent comparison algorithm helps you find
-            <b>the best deals</b> at <b>the lowest price</b>.
-          </p>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              Online.Com lists thousands of products from top Bangladesh
+              eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
+              and more. No more worrying about confusing prices across platforms
+              — our intelligent comparison algorithm helps you find
+              <b>the best deals</b> at <b>the lowest price</b>.
+            </p>
 
-          <h4
-            class="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
-          >
-             Coming Soon..
-          </h4>
+            <h4
+              class="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
+            >
+              Coming Soon..
+            </h4>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- Ecommerce Logos -->
-    <section class="py-16 bg-gray-50">
+    <!-- 💬 Customer Reviews Section -->
+    <section class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
-          SEARCH ACROSS TOP ECOMMERCE
-        </h2>
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
+        <!-- Heading -->
+        <h2
+          class="text-4xl font-bold text-center text-gray-900 mb-14 tracking-wide"
         >
-          <img
-            src="https://mullokoto.com/ecommerce/Daraz.svg"
-            alt="Daraz"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/ecommerce/pickaboo.svg"
-            alt="Pickaboo"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/ecommerce/walton.svg"
-            alt="Walton"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/ecommerce/Rokomari.svg"
-            alt="Rokomari"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/ecommerce/Ryans.svg"
-            alt="Ryans"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/ecommerce/vision.svg"
-            alt="Vision"
-            class="h-12 mx-auto"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto">
-          <iframe
-            title="Mullokoto Promo Video"
-            width="100%"
-            height="500"
-            src="https://www.youtube.com/embed/TnMhCUyqY54"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="rounded-lg shadow-xl"
-          ></iframe>
-        </div>
-        <h3 class="text-3xl font-bold text-center text-gray-900 mt-8">
-          SEARCH FILTER SAVE
-        </h3>
-      </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
-          FEATURED PRODUCTS
+          CUSTOMER REVIEWS
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Review Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
           <div
-            v-for="product in featuredProducts"
-            :key="product.id"
-            class="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden"
+            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
             <img
-              :src="product.image"
-              :alt="product.name"
-              class="w-full h-48 object-cover"
+              src="/images/images/testi1.jpg"
+              alt="Customer 1"
+              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
             />
-            <div class="p-6">
-              <h4 class="text-xl font-bold text-purple-600 mb-2">
-                {{ product.price }}
-              </h4>
-              <p class="text-gray-700 mb-4">{{ product.name }}</p>
-              <p class="text-sm text-gray-500 flex items-center mb-2">
-                <i class="fa-solid fa-clipboard-list mr-2"></i
-                >{{ product.store }}
-              </p>
-              <p class="text-sm text-gray-500 flex items-center">
-                <i class="fa-sharp fa-solid fa-list mr-2"></i
-                >{{ product.category }}
-              </p>
+            <h3 class="text-lg font-semibold text-gray-800">Sarah Ahmed</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
+              “Fast delivery and top-quality products! I’m extremely satisfied
+              with my shopping experience.”
+            </p>
+            <div class="flex space-x-1">
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-gray-300 text-lg">★</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+          >
+            <img
+              src="/images/images/testi2.jpg"
+              alt="Customer 2"
+              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
+            />
+            <h3 class="text-lg font-semibold text-gray-800">Mahmud Hasan</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
+              “Excellent customer service. They really care about quality and
+              customer satisfaction!”
+            </p>
+            <div class="flex space-x-1">
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+          >
+            <img
+              src="/images/images/testi3.jpg"
+              alt="Customer 3"
+              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
+            />
+            <h3 class="text-lg font-semibold text-gray-800">Riya Akter</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
+              “I loved how smooth the process was. Everything came exactly as
+              described. Highly recommend!”
+            </p>
+            <div class="flex space-x-1">
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-gray-300 text-lg">★</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+          >
+            <img
+              src="/images/images/ab3.jpg"
+              alt="Customer 4"
+              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
+            />
+            <h3 class="text-lg font-semibold text-gray-800">Tanvir Rahman</h3>
+            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
+              “Outstanding product quality! This is now my favorite online
+              shopping destination.”
+            </p>
+            <div class="flex space-x-1">
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-yellow-400 text-lg">★</span>
+              <span class="text-gray-300 text-lg">★</span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- 🎬 Local Video Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Video Wrapper -->
+        <div
+          class="relative max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-2xl group"
+        >
+          <video
+            controls
+            autoplay
+            muted
+            loop
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
+            <source src="./shortVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Optional overlay gradient for style -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"
+          ></div>
+        </div>
+
+        <!-- Title -->
+        <h3
+          class="text-3xl font-bold text-center text-gray-900 mt-10 tracking-wide"
+        >
+          MOST POPULAR PRODUCTS
+        </h3>
       </div>
     </section>
 
@@ -531,72 +570,6 @@
             Submit
           </button>
         </form>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
-          TESTIMONIALS
-        </h2>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div
-            v-for="testimonial in testimonials"
-            :key="testimonial.name"
-            class="bg-gray-50 rounded-lg p-8"
-          >
-            <p class="text-gray-700 mb-6 italic">"{{ testimonial.text }}"</p>
-            <div class="flex items-center">
-              <img
-                :src="testimonial.image"
-                :alt="testimonial.name"
-                class="w-16 h-16 rounded-full mr-4"
-              />
-              <div>
-                <h4 class="font-bold text-gray-900">{{ testimonial.name }}</h4>
-                <p class="text-gray-600 text-sm">{{ testimonial.role }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured In -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
-          FEATURED IN
-        </h2>
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-          <img
-            src="https://mullokoto.com/media/prothomalo.png"
-            alt="Prothom Alo"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/media/dailysun.png"
-            alt="Daily Sun"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/media/thedailystar.png"
-            alt="The Daily Star"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/media/thedailyobserver.png"
-            alt="The Daily Observer"
-            class="h-12 mx-auto"
-          />
-          <img
-            src="https://mullokoto.com/media/dgibangla.png"
-            alt="DGI Bangla"
-            class="h-12 mx-auto"
-          />
-        </div>
       </div>
     </section>
 
