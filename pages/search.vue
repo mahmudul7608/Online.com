@@ -148,48 +148,6 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-      <!-- AI Intro Section -->
-      <div class="mb-16 grid md:grid-cols-2 gap-8 items-center">
-        <!-- Left Side - Text and Button -->
-        <div class="space-y-6">
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            SMART COMPARISON SHOPPING
-            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
-              WITH Online.com
-            </span>
-          </h2>
-          <p class="text-gray-700 text-lg leading-relaxed">
-            Online.com lists thousands of products from top Bangladesh eCommerce like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal, and more. No more worrying about so many choices and price variations for a product among eCommerce platforms. Our intelligent comparison algorithm will help you find the best deals and that too at the lowest price.
-          </p>
-          <button
-            @click="scrollToSearch"
-            class="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            Search Now
-          </button>
-        </div>
-
-        <!-- Right Side - Video -->
-        <div class="relative">
-          <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 p-2">
-            <div class="rounded-2xl overflow-hidden bg-white">
-              <video
-                autoplay
-                loop
-                muted
-                playsinline
-                class="w-full h-auto"
-              >
-                <source src="/images/images/shortVideo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <!-- Decorative Elements -->
-          <div class="absolute -top-4 -right-4 w-24 h-24 bg-pink-400 rounded-full blur-2xl opacity-40 animate-pulse"></div>
-          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-400 rounded-full blur-2xl opacity-40 animate-pulse"></div>
-        </div>
-      </div>
 
       <!-- Search Header -->
       <div class="mb-8">

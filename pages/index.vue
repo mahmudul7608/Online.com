@@ -8,7 +8,7 @@
     >
       <!-- Soft gradient blur circles for background effect -->
       <div
-        class="absolute top-16 left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"
+        class="absolute top-14 left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"
       ></div>
       <div
         class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl"
@@ -79,16 +79,16 @@
             </button>
             <button
               @click="handleSearch"
-              class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 hover:from-blue-700 hover:to-purple-700 transition-all font-semibold rounded-full"
+              class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-4 hover:from-blue-700 hover:to-purple-700 transition-all font-semibold rounded-full"
             >
-              Search Now →
+              Search Now
             </button>
           </div>
         </div>
 
         <!-- Rating/Trust indicator -->
         <div
-          class="inline-flex items-center justify-center gap-2 mt-6 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-400"
+          class="inline-flex items-center justify-center gap-2 mt-8 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-400"
         >
           <div class="flex text-yellow-400">
             <span>⭐</span>
@@ -102,8 +102,51 @@
       </div>
     </section>
 
+    <!-- Smart Comparison Section -->
+
+    <section class="py-15 mb-3 bg-gradient-to-br from-purple-50 to-pink-50">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Left: Text content -->
+          <div class="order-2 md:order-1 text-center md:text-left">
+            <h2
+              class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight"
+            >
+              SMART SHOPPING <br />
+              WITH <span class="text-pink-600">Online.Com</span>
+            </h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              MulloKoto lists thousands of products from top Bangladesh
+              eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
+              and more. No more confusion or price variation! Our intelligent
+              comparison algorithm helps you find the <b>best deals</b> at the
+              <b>lowest price</b>.
+            </p>
+            <button
+              @click="scrollToSearch"
+              class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300"
+            >
+              Search Now
+            </button>
+          </div>
+
+          <!-- Right: Video -->
+          <div class="order-1 md:order-2 flex justify-center">
+            <video
+              src="/pages/shortVideo.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              class="rounded-2xl shadow-3xl w-full max-w-md md:max-w-lg"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Browse Top Categories - Product Cards -->
-    <section class="py-16 bg-white">
+    <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
           BROWSE TOP CATEGORIES
@@ -263,7 +306,7 @@
           >
             <!-- Product Image -->
             <div
-              class="relative h-64 bg-gray-50 flex items-center justify-center p-4 overflow-hidden"
+              class="relative h-52 bg-gray-50 flex items-center justify-center p-3 overflow-hidden"
             >
               <img
                 :src="product.image"
@@ -313,103 +356,53 @@
       </div>
     </section>
 
-    <!-- Smart Comparison Section -->
-    <section class="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img
-              src="https://mullokoto.com/gif/intro.gif"
-              alt="Intro"
-              class="rounded-lg shadow-xl"
-            />
-          </div>
-          <div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">
-              SMART COMPARISON SHOPPING <br />
-              WITH MULLOKOTO
-            </h2>
-            <p class="text-lg text-gray-700 mb-8">
-              MulloKoto lists thousands of products from top Bangladesh
-              eCommerce like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal, and
-              more. No more worrying about so many choices and price variations
-              for a product among eCommerce platforms. Our intelligent
-              comparison algorithm will help you find the best deals and that
-              too at the lowest price.
-            </p>
-            <button
-              class="bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition text-lg font-semibold"
-            >
-              Search Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Extension Section -->
-    <section class="py-16 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">
-              SMART COMPARISON SHOPPING WITH MULLOKOTO
-            </h2>
-            <p class="text-lg text-gray-700 mb-6">
-              MulloKoto lists thousands of products from top Bangladesh
-              eCommerce like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal, and
-              more. No more worrying about so many choices and price variations
-              for a product among eCommerce platforms. Our intelligent
-              comparison algorithm will help you find the best deals and that
-              too at the lowest price.
-            </p>
-            <h4 class="text-2xl font-semibold text-purple-600">Coming soon</h4>
-          </div>
-          <div>
-            <img
-              src="https://mullokoto.com/gif/extension.gif"
-              alt="Extension"
-              class="rounded-lg shadow-xl"
-            />
-          </div>
+  <section
+    class="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-pink-50 border-t border-gray-100"
+  >
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <!-- Left: Video -->
+        <div class="flex justify-center relative group">
+          <div
+            class="absolute -inset-4 bg-purple-200/30 blur-3xl rounded-3xl opacity-50 group-hover:opacity-80 transition duration-500"
+          ></div>
+          <video
+            src="./ShortVideo2.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            class="relative z-10 rounded-3xl shadow-5xl w-[290px] max-w-md md:max-w-lg ring-4 ring-yellow-300 group-hover:scale-105 transition-all duration-500"
+          ></video>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div class="text-center md:text-right">
+          <h2
+            class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-snug"
+          >
+            SMART SHOPPING <br />
+            WITH <span class="text-purple-600">Online.Com</span>
+          </h2>
+
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Online.Com lists thousands of products from top Bangladesh
+            eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
+            and more. No more worrying about confusing prices across platforms —
+            our intelligent comparison algorithm helps you find
+            <b>the best deals</b> at <b>the lowest price</b>.
+          </p>
+
+          <h4
+            class="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
+          >
+             Coming Soon..
+          </h4>
         </div>
       </div>
-    </section>
-
-    <!-- Maximize Savings -->
-    <section class="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img
-              src="https://mullokoto.com/gif/feature.png"
-              alt="Features"
-              class="rounded-lg shadow-xl"
-            />
-          </div>
-          <div>
-            <h2 class="text-4xl font-bold text-gray-900 mb-6">
-              MAXIMIZE YOUR SAVINGS
-            </h2>
-            <p class="text-lg text-gray-700">
-              Mullokoto lets you compare thousands of products for the most
-              affordable price. <br />
-              It lets you know when there is a discount available for your saved
-              products.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Free Section -->
-    <section class="py-20 bg-white text-center relative overflow-hidden">
-      <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <h2 class="text-5xl font-bold text-gray-900 mb-4">
-          Completely free for the user
-        </h2>
-      </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Ecommerce Logos -->
     <section class="py-16 bg-gray-50">
