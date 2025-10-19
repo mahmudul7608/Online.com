@@ -421,7 +421,7 @@
             class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
             <img
-              src="/images/images/testi1.jpg"
+              src="/images/testi1.jpg"
               alt="Customer 1"
               class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
             />
@@ -444,7 +444,7 @@
             class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
             <img
-              src="/images/images/testi2.jpg"
+              src="/images/testi2.jpg"
               alt="Customer 2"
               class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
             />
@@ -467,7 +467,7 @@
             class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
             <img
-              src="/images/images/testi3.jpg"
+              src="/images/testi3.jpg"
               alt="Customer 3"
               class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
             />
@@ -490,7 +490,7 @@
             class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
           >
             <img
-              src="/images/images/ab3.jpg"
+              src="/images/ab3.jpg"
               alt="Customer 4"
               class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
             />
@@ -732,7 +732,7 @@ const topProducts = [
     id: 101,
     name: "Samsung Galaxy S23 Ultra 5G",
     price: "135,000",
-    image: "/images/images/s23.jpg",
+    image: "/images/s23.jpg",
     store: "Othoba",
     category: "Mobile",
   },
@@ -740,7 +740,7 @@ const topProducts = [
     id: 102,
     name: "Apple iPhone 14 Pro Max",
     price: "165,000",
-    image: "/images/images/apple-iphone-14.jpg",
+    image: "/images/apple-iphone-14.jpg",
     store: "Ryans",
     category: "Mobile",
   },
@@ -748,7 +748,7 @@ const topProducts = [
     id: 103,
     name: 'MacBook Air M2 13.6" 8GB 256GB',
     price: "125,000",
-    image: "/images/images/MacBook Air M2 .jpg",
+    image: "/images/MacBook Air M2 .jpg",
     store: "Ryans",
     category: "Laptop",
   },
@@ -756,7 +756,7 @@ const topProducts = [
     id: 104,
     name: "Sony WH-1000XM5 Wireless Headphones",
     price: "35,000",
-    image: "/images/images/Sony .jpg",
+    image: "/images/Sony .jpg",
     store: "Othoba",
     category: "Audio",
   },
@@ -764,7 +764,7 @@ const topProducts = [
     id: 105,
     name: "Canon EOS R6 Mark II Mirrorless",
     price: "280,000",
-    image: "/images/images/dell-xps g.jpg",
+    image: "/images/dell-xps g.jpg",
     store: "Ryans",
     category: "Camera",
   },
@@ -772,7 +772,7 @@ const topProducts = [
     id: 106,
     name: 'Samsung 55" 4K Smart TV',
     price: "68,000",
-    image: "/images/images/iPad Pro .jpg",
+    image: "/images/iPad Pro .jpg",
     store: "Othoba",
     category: "TV",
   },
@@ -780,7 +780,7 @@ const topProducts = [
     id: 107,
     name: "Dell XPS 15 9520 Intel Core i7",
     price: "185,000",
-    image: "/images/images/dell-xps g.jpg",
+    image: "/images/dell-xps g.jpg",
     store: "Ryans",
     category: "Laptop",
   },
@@ -788,7 +788,7 @@ const topProducts = [
     id: 108,
     name: 'iPad Pro 12.9" M2 Chip',
     price: "145,000",
-    image: "/images/images/iPad Pro .jpg",
+    image: "/images/iPad Pro .jpg",
     store: "Ryans",
     category: "Tablet",
   },
@@ -796,7 +796,7 @@ const topProducts = [
     id: 109,
     name: "Nikon Z9 Mirrorless Camera",
     price: "520,000",
-    image: "/images/images/s23.jpg",
+    image: "/images/s23.jpg",
     store: "Ryans",
     category: "Camera",
   },
@@ -804,7 +804,7 @@ const topProducts = [
     id: 110,
     name: 'LG 65" OLED 4K Smart TV',
     price: "195,000",
-    image: "/images/images/apple-iphone-14.jpg",
+    image: "/images/apple-iphone-14.jpg",
     store: "Othoba",
     category: "TV",
   },
@@ -812,7 +812,7 @@ const topProducts = [
     id: 111,
     name: "Asus ROG Strix Gaming Laptop",
     price: "215,000",
-    image: "/images/images/MacBook Air M2 .jpg",
+    image: "/images/MacBook Air M2 .jpg",
     store: "Ryans",
     category: "Gaming",
   },
@@ -820,7 +820,7 @@ const topProducts = [
     id: 112,
     name: "Apple Watch Series 9 GPS",
     price: "45,000",
-    image: "/images/images/Sony .jpg",
+    image: "/images/Sony .jpg",
     store: "Ryans",
     category: "Watch",
   },

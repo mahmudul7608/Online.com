@@ -6,8 +6,8 @@
         <div class="relative group">
           <!-- Video Thumbnail -->
           <video
-            src="/images/images/shortVideo.mp4"
-            poster="/images/images/shortVideo.mp4"
+            src="/videos/shortVideo.mp4"
+            poster="/videos/shortVideo.mp4"
             controls
             class="w-full rounded-lg shadow-2xl"
           ></video>
