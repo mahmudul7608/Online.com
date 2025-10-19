@@ -133,7 +133,7 @@
           <!-- Right: Video -->
           <div class="order-1 md:order-2 flex justify-center">
             <video
-              src="/pages/shortVideo.mp4"
+              src="./public/videos/shortVideo.mp4"
               autoplay
               loop
               muted
@@ -368,7 +368,7 @@
               class="absolute -inset-4 bg-purple-200/30 blur-3xl rounded-3xl opacity-50 group-hover:opacity-80 transition duration-500"
             ></div>
             <video
-              src="./ShortVideo2.mp4"
+              src="./public/videos/ShortVideo2.mp4"
               autoplay
               muted
               loop
@@ -523,9 +523,9 @@
             autoplay
             muted
             loop
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            class="w-full h-[450px] object-cover transition-transform duration-500 group-hover:scale-105"
           >
-            <source src="./shortVideo.mp4" type="video/mp4" />
+            <source src="./public/videos/short.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
