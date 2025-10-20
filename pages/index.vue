@@ -1,70 +1,166 @@
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-white pt-16">
     <Header />
 
     <!-- Hero Section -->
     <section
-      class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex items-center justify-center relative overflow-hidden"
+      class="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200 flex items-center justify-center relative overflow-hidden"
     >
-      <!-- Soft gradient blur circles for background effect -->
+      <!-- Decorative Background Elements -->
+      <!-- Animated gradient blobs -->
       <div
-        class="absolute top-14 left-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl"
+        class="absolute top-10 left-10 w-72 h-72 bg-purple-400/40 rounded-full blur-3xl animate-pulse"
       ></div>
       <div
-        class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl"
-      ></div>
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-300/20 rounded-full blur-3xl"
+        class="absolute bottom-10 right-10 w-96 h-96 bg-pink-400/30 rounded-full blur-3xl animate-pulse"
+        style="animation-delay: 1s"
       ></div>
 
+      <!-- Decorative shapes -->
       <div
-        class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full relative z-10"
+        class="absolute top-20 right-1/4 w-16 h-16 border-4 border-purple-400/30 rotate-45 animate-spin-slow"
+      ></div>
+      <div
+        class="absolute bottom-32 left-1/4 w-12 h-12 bg-purple-500/20 rounded-full animate-bounce-slow"
+      ></div>
+      <div
+        class="absolute top-1/3 left-10 w-8 h-8 bg-pink-500/30 transform rotate-45"
+      ></div>
+      <div
+        class="absolute top-1/2 right-20 w-6 h-6 bg-purple-600/40 rounded-full"
+      ></div>
+
+      <!-- Decorative leaf-like shapes -->
+      <svg
+        class="absolute top-1/4 left-1/3 w-32 h-32 text-purple-600/20 animate-float"
+        viewBox="0 0 100 100"
+        fill="currentColor"
       >
-        <!-- Small top text -->
-        <div
-          class="inline-block bg-blue-100/50 backdrop-blur-sm px-6 py-2 rounded-full mb-6 border border-blue-400"
-        >
-          <p class="text-sm md:text-base text-blue-700 font-medium">
-            Looking to Find Best Deals Online?
-          </p>
+        <path
+          d="M50,10 Q80,30 70,60 Q60,90 30,80 Q10,70 20,40 Q30,10 50,10 Z"
+        />
+      </svg>
+      <svg
+        class="absolute bottom-1/4 right-1/3 w-40 h-40 text-purple-700/15 animate-float"
+        style="animation-delay: 2s"
+        viewBox="0 0 100 100"
+        fill="currentColor"
+      >
+        <path
+          d="M50,10 Q80,30 70,60 Q60,90 30,80 Q10,70 20,40 Q30,10 50,10 Z"
+        />
+      </svg>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <!-- Small top badge - Centered at top -->
+        <div class="flex justify-center mb-8">
+          <div
+            class="inline-block bg-purple-600/10 backdrop-blur-sm px-6 py-2 rounded-full border-2 border-purple-400/50"
+          >
+            <p class="text-sm md:text-base text-purple-800 font-semibold">
+              Looking to Find Best Deals Online?
+            </p>
+          </div>
         </div>
 
-        <!-- Main heading -->
-        <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-2">
-          <span class="text-gray-900">We Find </span>
-          <span
-            class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
-            >BEST DEALS</span
-          >
-        </h2>
-
-        <!-- Subheading -->
-        <h2
-          class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2"
-        >
-          FOR YOU
-        </h2>
-
-        <!-- Search Input -->
-        <div class="max-w-2xl mx-auto mt-7">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <!-- Left Side: Text Content -->
           <div
-            class="flex items-center bg-white rounded-full shadow-xl overflow-hidden relative border border-blue-400"
+            class="text-center lg:text-left order-2 lg:order-1 flex flex-col justify-center"
+          >
+            <!-- Main Heading with Beautiful Typography -->
+            <div class="space-y-2">
+              <h1
+                class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none"
+              >
+                <span class="block text-gray-900 mb-1">We Find</span>
+                <span
+                  class="block bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 bg-clip-text text-transparent drop-shadow-2xl mb-1"
+                  style="-webkit-text-stroke: 0.5px rgba(147, 51, 234, 0.1)"
+                  >BEST DEALS</span
+                >
+                <span class="block text-gray-900">FOR YOU</span>
+              </h1>
+
+              <!-- Decorative underline -->
+              <div class="flex justify-center lg:justify-start mt-6">
+                <div
+                  class="w-40 h-2 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 rounded-full shadow-lg"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Video with Decorative Frame -->
+          <div
+            class="order-1 lg:order-2 flex justify-center items-center relative"
+          >
+            <!-- Decorative background for video -->
+            <div class="relative group">
+              <!-- Animated glow effect -->
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 animate-pulse"
+              ></div>
+
+              <!-- Video container with modern frame -->
+              <div
+                class="relative bg-white p-3 sm:p-4 rounded-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+              >
+                <!-- Inner decorative border -->
+                <div
+                  class="bg-gradient-to-br from-purple-200 to-pink-200 p-1 rounded-2xl"
+                >
+                  <video
+                    src="/public/videos/mekup33.mp4"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="rounded-2xl shadow-xl w-[600px] max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[500px] h-auto object-cover"
+                  ></video>
+                </div>
+
+                <!-- Decorative corner accents -->
+                <div
+                  class="absolute -top-3 -left-3 w-8 h-8 bg-purple-600 rounded-full animate-ping opacity-75"
+                ></div>
+                <div
+                  class="absolute -bottom-3 -right-3 w-10 h-10 bg-pink-600 rounded-full animate-ping opacity-75"
+                  style="animation-delay: 0.5s"
+                ></div>
+              </div>
+
+              <!-- Floating decorative elements around video -->
+              <div
+                class="absolute -top-6 -right-6 w-12 h-12 bg-yellow-400 rounded-full animate-bounce opacity-80"
+              ></div>
+              <div
+                class="absolute -bottom-8 -left-8 w-16 h-16 bg-purple-500/30 rounded-full blur-xl animate-pulse"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Input - Centered between text and video -->
+        <div class="max-w-lg mx-auto mt-12 mb-8">
+          <div
+            class="flex items-center bg-white rounded-full shadow-2xl overflow-hidden relative border-2 border-purple-300 hover:border-purple-400 transition-all"
           >
             <input
               v-model="searchQuery"
               type="text"
               placeholder="What Are You Looking For Today?"
-              class="flex-1 px-4 py-3 text-lg outline-none text-center text-gray-700 placeholder:text-gray-400"
+              class="flex-1 px-5 py-2.5 text-sm outline-none text-center text-gray-700 placeholder:text-gray-500 font-medium"
               @keyup.enter="handleSearch"
             />
             <button
               v-if="searchQuery"
               @click="clearSearch"
-              class="absolute right-10 text-gray-400 hover:text-gray-600 transition px-2"
+              class="absolute right-28 text-gray-400 hover:text-gray-600 transition px-2"
               title="Clear search"
             >
               <svg
-                class="w-5 h-5"
+                class="w-4 h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -79,36 +175,40 @@
             </button>
             <button
               @click="handleSearch"
-              class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-4 hover:from-blue-700 hover:to-purple-700 transition-all font-semibold rounded-full"
+              class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2.5 hover:from-purple-700 hover:to-pink-700 transition-all font-bold text-sm rounded-full shadow-lg hover:shadow-xl"
             >
-              Search Now
+              Search
             </button>
           </div>
-        </div>
 
-        <!-- Rating/Trust indicator -->
-        <div
-          class="inline-flex items-center justify-center gap-2 mt-8 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-400"
-        >
-          <div class="flex text-yellow-400">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+          <!-- Star Rating below search -->
+          <div class="flex items-center justify-center gap-2 mt-5">
+            <div
+              class="inline-flex items-center gap-2 bg-white/80 px-5 py-2 rounded-full border-2 border-purple-300 shadow-md"
+            >
+              <div class="flex text-yellow-400 text-base">
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+              </div>
+              <span class="text-xs text-gray-700 font-bold">515+ 5 Stars</span>
+            </div>
           </div>
-          <span class="text-sm text-gray-600 font-medium">915+ 5 Stars</span>
         </div>
       </div>
     </section>
 
     <!-- Smart Comparison Section -->
 
-    <section class="py-15 mb-3 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section
+      class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
+    >
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <!-- Left: Text content -->
-          <div class="order-2 md:order-1 text-center md:text-left">
+          <div class="order-1 md:order-1 text-center md:text-left">
             <h2
               class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight"
             >
@@ -131,7 +231,7 @@
           </div>
 
           <!-- Right: Video -->
-          <div class="order-1 md:order-2 flex justify-center">
+          <div class="order-2 md:order-2 flex justify-center">
             <video
               src="/videos/shortVideo.mp4"
               autoplay
@@ -146,7 +246,9 @@
     </section>
 
     <!-- Browse Top Categories - Product Cards -->
-    <section class="py-20 bg-white">
+    <section
+      class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
           BROWSE TOP CATEGORIES
@@ -155,7 +257,7 @@
         <!-- Cart Button -->
         <button
           @click="toggleCart"
-          class="fixed top-20 right-4 z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:bg-green-700 transition-all"
+          class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:bg-green-700 transition-all hover:scale-110"
         >
           <svg
             class="w-6 h-6"
@@ -358,54 +460,122 @@
 
     <!-- Extension Section -->
     <section
-      class="py-20 bg-gradient-to-br from-gray-50 via-purple-50/30 to-pink-50 border-t border-gray-100"
+      class="py-24 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200 relative overflow-hidden"
     >
-      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Decorative Background Elements -->
+      <div
+        class="absolute top-20 left-10 w-64 h-64 bg-purple-300/20 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-80 h-80 bg-pink-300/20 rounded-full blur-3xl"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Browser Extension
+          </h2>
+        </div>
+
         <div class="grid md:grid-cols-2 gap-16 items-center">
-          <!-- Left: Video -->
-          <div class="flex justify-center relative group">
-            <div
-              class="absolute -inset-4 bg-purple-200/30 blur-3xl rounded-3xl opacity-50 group-hover:opacity-80 transition duration-500"
-            ></div>
-            <video
-              src="/videos/ShortVideo2.mp4"
-              autoplay
-              muted
-              loop
-              playsinline
-              class="relative z-10 rounded-3xl shadow-5xl w-[290px] max-w-md md:max-w-lg ring-4 ring-yellow-300 group-hover:scale-105 transition-all duration-500"
-            ></video>
+          <!-- Left: Text Content -->
+          <div class="text-center md:text-left space-y-6">
+            <h3
+              class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight"
+            >
+              Shop Smarter with
+              <span
+                class="block bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 bg-clip-text text-transparent"
+              >
+                Online.Com Extension
+              </span>
+            </h3>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                >
+                  ✓
+                </div>
+                <div class="text-left">
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Instant Price Comparison
+                  </h4>
+                  <p class="text-gray-600">
+                    Compare prices from all major e-commerce sites in one click
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                >
+                  ✓
+                </div>
+                <div class="text-left">
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Best Deal Alerts
+                  </h4>
+                  <p class="text-gray-600">
+                    Get notified when prices drop on your favorite items
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div
+                  class="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold shadow-lg"
+                >
+                  ✓
+                </div>
+                <div class="text-left">
+                  <h4 class="font-bold text-gray-900 text-lg">
+                    Save Time & Money
+                  </h4>
+                  <p class="text-gray-600">
+                    Shop confidently knowing you're getting the best deal
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <div
+                class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl"
+              >
+                <span class="text-2xl">🚀</span>
+                <span>Coming Soon</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Right: Text Content -->
-          <div class="text-center md:text-right">
-            <h2
-              class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-snug"
-            >
-              SMART SHOPPING <br />
-              WITH <span class="text-purple-600">Online.Com</span>
-            </h2>
-
-            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-              Online.Com lists thousands of products from top Bangladesh
-              eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
-              and more. No more worrying about confusing prices across platforms
-              — our intelligent comparison algorithm helps you find
-              <b>the best deals</b> at <b>the lowest price</b>.
-            </p>
-
-            <h4
-              class="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text"
-            >
-              Coming Soon..
-            </h4>
+          <!-- Right: Video -->
+          <div class="flex justify-center relative group">
+            <div
+              class="absolute -inset-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition duration-500 animate-pulse"
+            ></div>
+            <div class="relative z-10 bg-white p-2 rounded-3xl shadow-2xl">
+              <video
+                src="/videos/ShortVideo2.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                class="rounded-2xl w-[280px] h-[400px] object-cover group-hover:scale-105 transition-all duration-500"
+              ></video>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 💬 Customer Reviews Section -->
-    <section class="py-20 bg-gray-50">
+    <section
+      class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Heading -->
         <h2
@@ -415,96 +585,107 @@
         </h2>
 
         <!-- Review Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Card 1 -->
           <div
-            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+            class="bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 border border-slate-700/50 hover:border-purple-500/50"
           >
-            <img
-              src="/images/testi1.jpg"
-              alt="Customer 1"
-              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
-            />
-            <h3 class="text-lg font-semibold text-gray-800">Sarah Ahmed</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
-              “Fast delivery and top-quality products! I’m extremely satisfied
-              with my shopping experience.”
+            <!-- Stars at top -->
+            <div class="flex space-x-1 mb-4">
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+              "Online.Com completely transformed my job search. I found my dream
+              job within two weeks of using the platform!"
             </p>
-            <div class="flex space-x-1">
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-gray-300 text-lg">★</span>
+
+            <!-- User Info -->
+            <div class="flex items-center gap-3">
+              <img
+                src="/images/testi1.jpg"
+                alt="Sarah Johnson"
+                class="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-purple-300"
+              />
+              <div>
+                <h3 class="text-white font-semibold">Sarah Johnson</h3>
+                <p class="text-gray-400 text-sm">
+                  Software Developer at TechCorp
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Card 2 -->
           <div
-            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+            class="bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 border border-slate-700/50 hover:border-purple-500/50"
           >
-            <img
-              src="/images/testi2.jpg"
-              alt="Customer 2"
-              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
-            />
-            <h3 class="text-lg font-semibold text-gray-800">Mahmud Hasan</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
-              “Excellent customer service. They really care about quality and
-              customer satisfaction!”
+            <!-- Stars at top -->
+            <div class="flex space-x-1 mb-4">
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+            </div>
+
+            <!-- Review Text -->
+            <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+              "The intelligent matching system connected me with opportunities I
+              wouldn't have found anywhere else."
             </p>
-            <div class="flex space-x-1">
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
+
+            <!-- User Info -->
+            <div class="flex items-center gap-3">
+              <img
+                src="/images/testi2.jpg"
+                alt="Michael Chen"
+                class="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-purple-300"
+              />
+              <div>
+                <h3 class="text-white font-semibold">Michael Chen</h3>
+                <p class="text-gray-400 text-sm">
+                  Product Manager at InnovateCo
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div
-            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+            class="bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 border border-slate-700/50 hover:border-purple-500/50"
           >
-            <img
-              src="/images/testi3.jpg"
-              alt="Customer 3"
-              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
-            />
-            <h3 class="text-lg font-semibold text-gray-800">Riya Akter</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
-              “I loved how smooth the process was. Everything came exactly as
-              described. Highly recommend!”
-            </p>
-            <div class="flex space-x-1">
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-gray-300 text-lg">★</span>
+            <!-- Stars at top -->
+            <div class="flex space-x-1 mb-4">
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-yellow-400 text-xl">★</span>
+              <span class="text-gray-600 text-xl">★</span>
             </div>
-          </div>
 
-          <!-- Card 4 -->
-          <div
-            class="flex flex-col items-center bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
-          >
-            <img
-              src="/images/ab3.jpg"
-              alt="Customer 4"
-              class="w-20 h-20 rounded-full object-cover ring-4 ring-purple-200 mb-5"
-            />
-            <h3 class="text-lg font-semibold text-gray-800">Tanvir Rahman</h3>
-            <p class="text-gray-600 text-sm mt-2 mb-5 leading-relaxed">
-              “Outstanding product quality! This is now my favorite online
-              shopping destination.”
+            <!-- Review Text -->
+            <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+              "The application process was seamless, and the employer responses
+              were incredibly fast. Highly recommend!"
             </p>
-            <div class="flex space-x-1">
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-yellow-400 text-lg">★</span>
-              <span class="text-gray-300 text-lg">★</span>
+
+            <!-- User Info -->
+            <div class="flex items-center gap-3">
+              <img
+                src="/images/testi3.jpg"
+                alt="Emily Rodriguez"
+                class="w-12 h-12 rounded-full object-cover shadow-lg ring-2 ring-purple-300"
+              />
+              <div>
+                <h3 class="text-white font-semibold">Emily Rodriguez</h3>
+                <p class="text-gray-400 text-sm">UX Designer at DesignStudio</p>
+              </div>
             </div>
           </div>
         </div>
@@ -512,7 +693,9 @@
     </section>
 
     <!-- 🎬 Local Video Section -->
-    <section class="py-20 bg-white">
+    <section
+      class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Video Wrapper -->
         <div
@@ -523,7 +706,7 @@
             autoplay
             muted
             loop
-            class="w-full h-[450px] object-cover transition-transform duration-500 group-hover:scale-105"
+            class="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
           >
             <source src="/videos/short.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -546,14 +729,14 @@
 
     <!-- Newsletter -->
     <section
-      class="py-20 bg-gradient-to-br from-purple-600 to-pink-600 text-white"
+      class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
     >
       <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-4xl font-bold mb-6">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">
           GET THE BEST ONLINE <br />
           DEALS ON YOUR INBOX
         </h2>
-        <p class="text-xl mb-8">
+        <p class="text-xl mb-8 text-gray-700">
           Signup Our Newsletter And Receive Periodic Info And Alerts <br />
           On Best Online Deals In Bangladesh
         </p>
@@ -565,7 +748,7 @@
           />
           <button
             type="submit"
-            class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition"
+            class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
           >
             Submit
           </button>
@@ -598,6 +781,14 @@ const handleSearch = () => {
 
 const clearSearch = () => {
   searchQuery.value = "";
+};
+
+const scrollToSearch = () => {
+  const searchSection = document.querySelector('input[type="text"]');
+  if (searchSection) {
+    searchSection.scrollIntoView({ behavior: "smooth", block: "center" });
+    searchSection.focus();
+  }
 };
 
 const addToCart = (product) => {
@@ -930,5 +1121,47 @@ const testimonials = [
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
 }
 </style>

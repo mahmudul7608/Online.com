@@ -1,5 +1,5 @@
 <template>
-  <nav class="border-b border-gray-200 relative bg-white shadow-sm">
+  <nav class="border-b border-gray-200 fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
@@ -14,7 +14,6 @@
           <li><NuxtLink to="/search" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">Search</NuxtLink></li>
           <li><NuxtLink to="/about" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">About</NuxtLink></li>
           <li><NuxtLink to="/contact" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">Contact</NuxtLink></li>
-          <li><NuxtLink to="/wishlist" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">Wish list</NuxtLink></li>
           <li><NuxtLink to="/signin" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">signin</NuxtLink></li>
           <li><NuxtLink to="/signup" class="text-blue-600 hover:text-blue-700 transition-colors font-medium text-sm lg:text-base">SignUp</NuxtLink></li>
         </ul>
@@ -37,7 +36,6 @@
         <li><NuxtLink @click="toggleMenu" to="/search" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">Search</NuxtLink></li>
         <li><NuxtLink @click="toggleMenu" to="/about" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">About</NuxtLink></li>
         <li><NuxtLink @click="toggleMenu" to="/contact" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">Contact</NuxtLink></li>
-        <li><NuxtLink @click="toggleMenu" to="/wishlist" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">Wish list</NuxtLink></li>
         <li><NuxtLink @click="toggleMenu" to="/signin" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">signin</NuxtLink></li>
         <li><NuxtLink @click="toggleMenu" to="/signup" class="block text-blue-600 hover:text-blue-700 transition-colors font-medium py-2">SignUp</NuxtLink></li>
       </ul>

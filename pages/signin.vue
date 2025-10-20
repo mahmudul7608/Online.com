@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+  <div class="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200 pt-16">
     <Header />
     
-    <div class="max-w-md mx-auto px-4 py-12">
+    <div class="max-w-md mx-auto px-4 py-16">
       <div class="bg-white rounded-2xl shadow-xl p-8">
         <h1 class="text-3xl font-bold text-gray-900 mb-6 text-center">Sign In</h1>
         
@@ -27,7 +27,7 @@
           
           <button 
             type="submit"
-            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition font-semibold"
+            class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg hover:from-purple-700 hover:to-pink-700 transition font-semibold"
           >
             Sign In
           </button>

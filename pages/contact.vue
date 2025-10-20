@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200 pt-16">
     <Header />
     
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h1 class="text-4xl font-bold text-gray-900 mb-8">Contact Us</h1>
       
       <form @submit.prevent="handleSubmit" class="space-y-6">

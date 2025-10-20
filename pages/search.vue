@@ -1,13 +1,13 @@
 <template>
   <div
-    class="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50"
+    class="min-h-screen bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200 pt-16"
   >
     <Header />
 
     <!-- Cart Button -->
     <button
       @click="toggleCart"
-      class="fixed top-20 right-4 z-50 bg-blue-600 text-white p-4 rounded-full shadow-2xl hover:bg-blue-700 transition-all"
+      class="fixed top-20 right-4 z-50 bg-green-600 text-white p-4 rounded-full shadow-2xl hover:bg-green-700 transition-all"
     >
       <svg
         class="w-6 h-6"
@@ -151,25 +151,25 @@
 
       <!-- Search Header -->
       <div class="mb-8">
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
           {{ searchTitle }}
         </h1>
 
         <!-- Search Input -->
-        <div class="max-w-3xl" ref="searchInputRef">
+        <div class="max-w-2xl mx-auto" ref="searchInputRef">
           <div
-            class="flex items-center bg-white border-2 border-blue-300 rounded-2xl shadow-lg overflow-hidden hover:border-blue-500 transition-all"
+            class="flex items-center bg-white border-2 border-purple-300 rounded-full shadow-2xl overflow-hidden hover:border-purple-400 transition-all"
           >
             <input
               v-model="searchQuery"
               type="text"
               placeholder="Search for products..."
-              class="flex-1 px-4 sm:px-6 py-3 sm:py-4 text-base outline-none text-gray-800"
+              class="flex-1 px-6 py-3 text-sm outline-none text-center text-gray-700 placeholder:text-gray-500 font-medium"
               @keyup.enter="handleSearch"
             />
             <button
               @click="handleSearch"
-              class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 hover:from-blue-700 hover:to-purple-700 transition-all font-semibold"
+              class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 hover:from-purple-700 hover:to-pink-700 transition-all font-bold text-sm rounded-full shadow-lg"
             >
               Search
             </button>
