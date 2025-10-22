@@ -216,7 +216,7 @@
               WITH <span class="text-pink-600">Online.Com</span>
             </h2>
             <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-              MulloKoto lists thousands of products from top Bangladesh
+              Online.com lists thousands of products from top Bangladesh
               eCommerce sites like Daraz, Othoba, Pickaboo, Chaldal, AjkerDeal,
               and more. No more confusion or price variation! Our intelligent
               comparison algorithm helps you find the <b>best deals</b> at the
