@@ -142,25 +142,25 @@
         </div>
 
         <!-- Search Input - Centered between text and video -->
-        <div class="max-w-lg mx-auto mt-12 mb-8">
+        <div class="max-w-2xl mx-auto mt-12 mb-8">
           <div
-            class="flex items-center bg-white rounded-full shadow-2xl overflow-hidden relative border-2 border-purple-300 hover:border-purple-400 transition-all"
+            class="flex items-center bg-white rounded-full shadow-2xl overflow-hidden relative border-2 border-purple-400 hover:border-purple-500 transition-all hover:shadow-purple-300/50"
           >
             <input
               v-model="searchQuery"
               type="text"
               placeholder="What Are You Looking For Today?"
-              class="flex-1 px-5 py-2.5 text-sm outline-none text-center text-gray-700 placeholder:text-gray-500 font-medium"
+              class="flex-1 px-8 py-4 text-base outline-none text-center text-gray-700 placeholder:text-gray-500 font-medium"
               @keyup.enter="handleSearch"
             />
             <button
               v-if="searchQuery"
               @click="clearSearch"
-              class="absolute right-28 text-gray-400 hover:text-gray-600 transition px-2"
+              class="absolute right-32 text-gray-400 hover:text-gray-600 transition px-2"
               title="Clear search"
             >
               <svg
-                class="w-4 h-4"
+                class="w-5 h-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -175,7 +175,7 @@
             </button>
             <button
               @click="handleSearch"
-              class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2.5 hover:from-purple-700 hover:to-pink-700 transition-all font-bold text-sm rounded-full shadow-lg hover:shadow-xl"
+              class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 hover:from-purple-700 hover:to-pink-700 transition-all font-bold text-base rounded-full shadow-lg hover:shadow-xl"
             >
               Search
             </button>
@@ -222,7 +222,7 @@
             </p>
             <button
               @click="scrollToSearch"
-              class="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300"
+              class="bg-gradient-to-r from-purple-500 via-pink-500 to-pink-600 text-white px-12 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-purple-400/50 hover:scale-105 transition-all duration-300"
             >
               Search Now
             </button>
@@ -542,9 +542,8 @@
 
             <div class="pt-4">
               <div
-                class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl"
+                class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-pink-600 text-white px-12 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-purple-400/50 hover:scale-105 transition-all duration-300 cursor-default"
               >
-                <span class="text-2xl">🚀</span>
                 <span>Coming Soon</span>
               </div>
             </div>
@@ -738,15 +737,17 @@
           Signup Our Newsletter And Receive Periodic Info And Alerts <br />
           On Best Online Deals In Bangladesh
         </p>
-        <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+        <form
+          class="flex flex-col md:flex-row gap-0 max-w-3xl mx-auto shadow-2xl rounded-full overflow-hidden border-2 border-purple-300"
+        >
           <input
             type="email"
             placeholder="Input your email here"
-            class="flex-1 px-6 py-4 rounded-lg text-gray-900 outline-none"
+            class="flex-1 px-8 py-5 text-gray-900 bg-white outline-none focus:bg-gray-50 transition-colors text-base"
           />
           <button
             type="submit"
-            class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition shadow-lg"
+            class="bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 text-white px-10 py-5 font-bold hover:from-purple-700 hover:to-pink-700 transition-all hover:shadow-xl text-lg"
           >
             Submit
           </button>
@@ -1095,19 +1096,19 @@ const testimonials = [
     name: "SAIFUL AZAD",
     role: "Cloud Engineer",
     image: "https://mullokoto.com/image/saiful.jpg",
-    text: "In the context of Bangladesh, finding a suitable product at reasonable pricing is challenging. Being informed about pricing of the same product in different merchants leverages customer satisfaction and negotiation to impact personal finance positively. Mullo-koto satisfies those demands. Now, before purchasing, I can motivate myself to deal the best.",
+    text: "In the context of Bangladesh, finding a suitable product at reasonable pricing is challenging. Being informed about pricing of the same product in different merchants leverages customer satisfaction and negotiation to impact personal finance positively. Online.com satisfies those demands. Now, before purchasing, I can motivate myself to deal the best.",
   },
   {
     name: "NAZMUS SAKIB",
     role: "Entrepreneur",
     image: "https://mullokoto.com/image/sakib.jpg",
-    text: "As we don't have Amazon or Walmart it's hard to find better deals. Then I came across Mullokoto, where thousands of products are listed on multiple e-commerce sites. Here I can search and sort products and compare what I want to buy, they even added a wish list option. I am reassured that the best deal is a search away.",
+    text: "As we don't have Amazon or Walmart it's hard to find better deals. Then I came across Online.com, where thousands of products are listed on multiple e-commerce sites. Here I can search and sort products and compare what I want to buy, they even added a wish list option. I am reassured that the best deal is a search away.",
   },
   {
     name: "POLASH AHMAD",
     role: "Software Developer",
     image: "https://mullokoto.com/image/polash.jpg",
-    text: "In the context of Bangladesh, finding a suitable product at reasonable pricing is challenging. Being informed about pricing of the same product in different merchants leverages customer satisfaction and negotiation to impact personal finance positively. Mullo-koto satisfies those demands. Now, before purchasing, best.",
+    text: "In the context of Bangladesh, finding a suitable product at reasonable pricing is challenging. Being informed about pricing of the same product in different merchants leverages customer satisfaction and negotiation to impact personal finance positively. Online.com satisfies those demands. Now, before purchasing, I can motivate myself to get the best deal.",
   },
 ];
 </script>
