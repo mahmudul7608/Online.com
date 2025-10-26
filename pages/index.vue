@@ -183,9 +183,7 @@
 
           <!-- Star Rating below search -->
           <div class="flex items-center justify-center gap-2 mt-5">
-            <div
-              class="inline-flex items-center gap-2 bg-white/80 px-5 py-2 rounded-full border-2 border-purple-300 shadow-md"
-            >
+            <div class="inline-flex items-center gap-2">
               <div class="flex text-yellow-400 text-base">
                 <span>⭐</span>
                 <span>⭐</span>
@@ -572,7 +570,7 @@
       </div>
     </section>
 
-    <!-- 💬 Customer Reviews Section -->
+    <!--  Customer Reviews Section -->
     <section
       class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
     >
@@ -692,7 +690,7 @@
       </div>
     </section>
 
-    <!-- 🎬 Local Video Section -->
+    <!--  Local Video Section -->
     <section
       class="py-20 bg-gradient-to-br from-purple-100 via-purple-200 to-pink-200"
     >
@@ -706,7 +704,7 @@
             autoplay
             muted
             loop
-            class="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
+            class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
           >
             <source src="/videos/short.mp4" type="video/mp4" />
             Your browser does not support the video tag.
