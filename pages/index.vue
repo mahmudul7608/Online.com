@@ -400,7 +400,7 @@
         <!-- Product Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div
-            v-for="product in topProducts"
+            v-for="product in topProducts.slice(0, 8)"
             :key="product.id"
             class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-blue-400"
           >
@@ -452,6 +452,16 @@
               </button>
             </div>
           </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="flex justify-center mt-12">
+          <NuxtLink
+            to="/search"
+            class="bg-gradient-to-r from-purple-600 via-pink-500 to-pink-600 text-white px-12 py-4 rounded-full font-bold text-lg shadow-2xl hover:shadow-purple-400/50 hover:scale-105 transition-all duration-300"
+          >
+            See More Products
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -927,20 +937,52 @@ const topProducts = [
     category: "Mobile",
   },
   {
-    id: 102,
-    name: "Apple iPhone 14 Pro Max",
-    price: "165,000",
-    image: "/images/apple-iphone-14.jpg",
-    store: "Ryans",
-    category: "Mobile",
-  },
-  {
     id: 103,
     name: 'MacBook Air M2 13.6" 8GB 256GB',
     price: "125,000",
     image: "/images/MacBook Air M2 .jpg",
     store: "Ryans",
     category: "Laptop",
+  },
+  {
+    id: 113,
+    name: "TVS Apache RTR 160 4v Blue Double Disc",
+    price: "223,999",
+    image: "https://images.othoba.com/images/thumbs/0136679_tvs-apache-rtr-160-4v-blue-double-disc_300.jpeg",
+    store: "Othoba",
+    category: "Bikes",
+  },
+  {
+    id: 106,
+    name: 'Samsung 55" 4K Smart TV',
+    price: "68,000",
+    image: "/images/iPad Pro .jpg",
+    store: "Othoba",
+    category: "Electronics",
+  },
+  {
+    id: 114,
+    name: "Modern Sofa Set - 3 Seater",
+    price: "45,000",
+    image: "https://images.othoba.com/images/thumbs/0363665_vision-75-led-tv-3d-4k-h01-smart_300.jpeg",
+    store: "Othoba",
+    category: "Furniture",
+  },
+  {
+    id: 115,
+    name: "Fresh Organic Food Bundle",
+    price: "2,500",
+    image: "https://images.othoba.com/images/thumbs/0363665_vision-75-led-tv-3d-4k-h01-smart_300.jpeg",
+    store: "Chaldal",
+    category: "Food",
+  },
+  {
+    id: 102,
+    name: "Apple iPhone 14 Pro Max",
+    price: "165,000",
+    image: "/images/apple-iphone-14.jpg",
+    store: "Ryans",
+    category: "Mobile",
   },
   {
     id: 104,
@@ -957,14 +999,6 @@ const topProducts = [
     image: "/images/dell-xps g.jpg",
     store: "Ryans",
     category: "Camera",
-  },
-  {
-    id: 106,
-    name: 'Samsung 55" 4K Smart TV',
-    price: "68,000",
-    image: "/images/iPad Pro .jpg",
-    store: "Othoba",
-    category: "TV",
   },
   {
     id: 107,
@@ -989,30 +1023,6 @@ const topProducts = [
     image: "/images/s23.jpg",
     store: "Ryans",
     category: "Camera",
-  },
-  {
-    id: 110,
-    name: 'LG 65" OLED 4K Smart TV',
-    price: "195,000",
-    image: "/images/apple-iphone-14.jpg",
-    store: "Othoba",
-    category: "TV",
-  },
-  {
-    id: 111,
-    name: "Asus ROG Strix Gaming Laptop",
-    price: "215,000",
-    image: "/images/MacBook Air M2 .jpg",
-    store: "Ryans",
-    category: "Gaming",
-  },
-  {
-    id: 112,
-    name: "Apple Watch Series 9 GPS",
-    price: "45,000",
-    image: "/images/Sony .jpg",
-    store: "Ryans",
-    category: "Watch",
   },
 ];
 
