@@ -1,6 +1,6 @@
-# 🌐 Online.com — Smart Comparison Shopping Platform
+# 🌐 Online.com - Smart Comparison Shopping Platform
 
-![Online.com Preview](https://github.com/mahmudul7608/mullokoto/assets/146390183/a19e4729-7e4f-441d-97b1-a636602fbd5c)
+<img width="1900" height="869" alt="image" src="https://github.com/user-attachments/assets/52f61144-d529-4aad-b614-b9722b049a47" />
 
 **Online.com** is a modern **Smart Comparison Shopping Platform** demo template built with  
 **Vue.js, Nuxt.js, and Tailwind CSS**.  
@@ -15,10 +15,10 @@ The project focuses on performance, clean UI, and responsive design.
 
 ##  Tech Stack
 
--  **Vue.js** — Reactive frontend framework  
--  **Nuxt.js** — SSR, routing, and performance optimization  
--  **Tailwind CSS** — Utility-first CSS framework  
--  **HTML5** — Semantic markup  
+-  **Vue.js**  Reactive frontend framework  
+-  **Nuxt.js**  SSR, routing, and performance optimization  
+-  **Tailwind CSS**  Utility-first CSS framework  
+-  **HTML5**  Semantic markup  
 
 ---
 
