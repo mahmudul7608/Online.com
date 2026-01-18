@@ -1,4 +1,4 @@
-# 🌐 Online.com - Smart Comparison Shopping Platform
+# 🌐 Online.com Smart Comparison Shopping Platform
 
 <img width="1900" height="869" alt="image" src="https://github.com/user-attachments/assets/52f61144-d529-4aad-b614-b9722b049a47" />
 
@@ -6,12 +6,9 @@
 **Vue.js, Nuxt.js, and Tailwind CSS**.  
 The project focuses on performance, clean UI, and responsive design.
 
----
-
 ## Live Demo
  **Live View:** https://shoppinginonline.netlify.app/
 
----
 
 ##  Tech Stack
 
@@ -19,8 +16,6 @@ The project focuses on performance, clean UI, and responsive design.
 -  **Nuxt.js**  SSR, routing, and performance optimization  
 -  **Tailwind CSS**  Utility-first CSS framework  
 -  **HTML5**  Semantic markup  
-
----
 
 ##  Features
 
@@ -30,7 +25,6 @@ The project focuses on performance, clean UI, and responsive design.
 - Tailwind CSS utility-based styling  
 - Well-structured and scalable codebase  
 
----
 
 ##  Project Overview
 
@@ -40,8 +34,6 @@ This project was built to:
 - Build modern UI using **Tailwind CSS**  
 - Demonstrate frontend architecture  
 - Showcase a comparison shopping platform UI  
-
----
 
 ##  Getting Started
 
