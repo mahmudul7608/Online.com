@@ -1,4 +1,4 @@
-# 🌐 Online.com Smart Comparison Shopping Platform
+# Online.com Smart Comparison Shopping Platform
 
 <img width="1900" height="869" alt="image" src="https://github.com/user-attachments/assets/52f61144-d529-4aad-b614-b9722b049a47" />
 
