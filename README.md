@@ -11,7 +11,6 @@ The project focuses on performance, clean UI, and responsive design.
 
 
 ##  Tech Stack
-
 Vue.js : Reactive frontend framework
 
 Nuxt.js : SSR, routing, and performance optimization
@@ -21,7 +20,6 @@ Tailwind CSS : Utility-first CSS framework
 HTML5 : Semantic and structured markup  
 
 ##  Features
-
 Modern and clean user interface
 
 Fully responsive across all devices
@@ -33,7 +31,6 @@ Tailwind CSS utility-based styling
 Scalable and well-structured codebase
 
 ##  Project Overview
-
 This project was built to:
 
 - Practice **Vue.js & Nuxt.js** development  
@@ -42,7 +39,6 @@ This project was built to:
 - Showcase a comparison shopping platform UI  
 
 ##  Getting Started
-
 Follow these steps to run the project locally:
 
 ###  Clone the repository
